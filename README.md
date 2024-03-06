@@ -1,2 +1,1 @@
-# Local_Library_Project
- 
+# Qualified local library project completed by William Hess
