@@ -8,13 +8,13 @@ function findAccountById(accounts, id) {
 }
 
 function sortAccountsByLastName(accounts) {
-  // YOUR SOLUTION HERE
-  // Hint: You can use the [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method here. 
+  accounts.sort((accountA, accountB) => accountA.name.last > accountB.name.last ? 1 : -1);
+  return accounts;
 }
 
 function getAccountFullNames(accounts) {
-  // YOUR SOLUTION HERE
-  // Hint: You can use the [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method here.
+  const names = accounts.map((account) => account.name.first + " " + account.name.last);
+  return names;
 }
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW
